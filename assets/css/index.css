@@ -1,0 +1,148 @@
+@font-face{ 
+  font-family: 'Libre Franklin', sans-serif;
+  src: url(../webfonts/LibreFranklin-Regular.ttf);
+  }
+
+html{
+  background-image: url("images/overlay.png"), url("../../images/bg.jpeg");
+  background-position: top left, center center;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h3{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #f2f2f2;
+  font-size: 30px;
+}
+
+h4{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(81, 81, 81);
+  font-size: 30px;
+}
+
+p{
+  color: rgb(81, 81, 81);
+  font-size: 18px;
+  line-height: 33px;
+}
+
+h6{
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+hr{
+  border: 1;
+  width: 100px;
+  border-bottom: solid 0px #1e1e1e;
+  margin: 30px 0;
+}
+
+body,
+footer,
+.container{
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body a{
+  text-decoration: none;
+}
+
+body a:hover {
+  transform: scale(1.3, 1.3); /* Standard syntax */
+  -ms-transform: scale(1.3, 1.3); /* IE 9 */
+  -webkit-transform: scale(1.3, 1.3); /* Safari prior 9.0 */
+}
+
+.intro{
+  height: 550px;
+  color: #f2f2f2;
+}
+
+.mainImageContainer{
+  width: 90%;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.image{width: 100%;}
+
+.intro h6,
+.getInTouch p{
+  color: #f2f2f2;
+}
+
+.intro hr{
+  border: 1;
+  width: 100px;
+  border-bottom: solid 1px #dddddd;
+  margin: 30px 0;
+}
+
+.floatingdiv{
+  width: 60%; padding: 80px 50px 50px 50px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Who I am */
+.whoIam,
+.stuffido,
+.stuffrecentlymade{border-bottom: 1px solid grey;}
+.cvBtn{
+  background-color: rgb(84, 191, 84);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+  .cvBtn a{color: #f2f2f2;}
+
+/* Stuff I Do */
+.stuffrecentlymade{padding-bottom: 80px;}
+.stuffido{width: 100%;}
+.responsiveTable{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.sm-card{min-width: 300px;}
+  .sm-card .imageContainer{
+    min-width: 100px; 
+    margin: 30px;
+  }
+  .stuffido img{width:80px;}
+
+/* Get In Touch */
+footer{width: 100%; background-color: rgba(0, 0, 0, 0.7); margin-bottom: 0;}
+.getInTouch{width: 50%;}
+.socialMediaIconContainer{width: 60px; height: 60px; margin-top: 30px; cursor: pointer;}
+.socialMediaImg{width: 100%;}
+
+/* media query */
+@media only screen and (min-width: 1100px){
+  .mainImageContainer{width: 70%;}
+}
+
+@media only screen and (max-width: 900px){
+  .floatingdiv{width: 65%;}
+  .mainImageContainer{width: 100%;}
+  .mainImageContainer .image{width:120%}
+}
